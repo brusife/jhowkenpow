@@ -15,26 +15,26 @@
             <p>Faça sua jogada!</p>
         </div>
         <main>
-            <div id="pedra"><img src="../imgs/pedram.jpeg" alt=""></div>
-            <div id="papel"><img src="../imgs/papelm.jpeg" alt=""></div>
-            <div id="tesoura" class="escolhido"><img src="../imgs/tesouram.jpeg" alt=""></div>
+            <div id="pedra" onclick="escolha('pedra')"><img src="../imgs/pedram.jpeg" alt="Ícone de escolha PEDRA"></div>
+            <div id="papel" onclick="escolha('papel')"><img src="../imgs/papelm.jpeg" alt="Ícone de escolha PAPEL"></div>
+            <div id="tesoura"onclick="escolha('tesoura')"><img src="../imgs/tesouram.jpeg" alt="Ícone de escolha TESOURA"></div>
         </main>
-        <div id="escolha">
-            <p>Você escolheu: TESOURA</p>
+        <div id="escolha" class="escondido">
+            <p id="escolhaTexto">Você escolheu: </p>
         </div>
-        <div class="resultado">
-            <div id="vencedor"><img src="../imgs/tesoura.jpeg" alt=""></div>
-            <div id="perdedor"><img src="../imgs/papel.jpeg" alt=""></div>
+        <div class="resultado escondido">
+            <div id="perdedor"><img src="../imgs/tesoura.jpeg" alt=""></div>
+            <div id="perdedor"><img src="../imgs/pedra.jpeg" alt=""></div>
         </div>
 
-        <div id="resfinal">
+        <div id="resfinal" class="escondido">
             <!--<p>VITÓRIA!! <img src="../imgs/trofeu.png" alt=""></p>-->
             <!--<p>Derrota... <img src="../imgs/fracassado.png" alt=""></p>-->
-            <p>Temos um EMPATE! </p>
+            <!--<p>Temos um EMPATE! </p>-->
 
             <p><a href=""><button>Jogar de novo!</button></a></p>
         </div>
 
-    
+<script src="script.js"></script>
 </body>
 </html>

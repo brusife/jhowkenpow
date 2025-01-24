@@ -118,6 +118,10 @@ button a {
     text-decoration: none;
 }
 
+.escondido {
+    display: none;
+}
+
 
 @media screen and (min-width: 1024px)  {
     header img {
@@ -130,7 +134,14 @@ button a {
     }
 
     main img {
-        width: 30%;
+        width: 35%;
+        transition: 400ms;
+    }
+
+    main img:hover {
+        width: 45%;
+        border-radius: 50%;
+        filter: none;
     }
 
     #perdedor img {
