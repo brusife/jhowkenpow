@@ -51,6 +51,7 @@ body {
     padding: 30px 0;
 }
 
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -61,6 +62,11 @@ main img {
     max-width: 70%;
     border-radius: 10px;
     filter: grayscale(80%);
+}
+
+#fotinha {
+    width: 20%;
+    border-radius: 50%;
 }
 
 .escolhido img {
@@ -80,11 +86,11 @@ main img {
 }
 
 
-#vencedor img {
+.vencedor img {
     border-radius: 30px;
 }
 
-#perdedor img {
+.perdedor img {
     filter: blur(2px);
     width: 65%;
 }
@@ -122,6 +128,9 @@ button a {
     display: none;
 }
 
+#jdenovo {
+    text-align: center;
+}
 
 @media screen and (min-width: 1024px)  {
     header img {
